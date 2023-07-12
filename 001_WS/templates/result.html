@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Results</h1>
+
+    <div class="center">
+        <table>
+
+            <tr>
+                <th >name</th>
+                <th>price</th>
+                   <th>header</th>   <th>comment</th>   <th>reviewer</th>
+
+
+
+            </tr>
+
+            {% for review in reviews1 %}
+
+            <tr>
+                <td > {{review['name']}} </td>
+                <td> {{review['price']}} </td>
+                <td > {{review['header']}} </td>
+                <td> {{review['comment']}} </td>
+                <td> {{review['rev_name']}} </td>
+
+            </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+
+</body>
+</html>
